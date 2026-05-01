@@ -1,0 +1,85 @@
+velora/
+├── docker-compose.yml
+├── .env.example
+├── backend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── src/
+│   │   ├── index.js
+│   │   ├── config/
+│   │   │   └── db.js
+│   │   ├── middleware/
+│   │   │   └── auth.js
+│   │   ├── routes/
+│   │   │   ├── auth.js
+│   │   │   ├── movies.js
+│   │   │   ├── watchlist.js
+│   │   │   ├── interactions.js
+│   │   │   └── providers.js
+│   │   ├── services/
+│   │   │   ├── tmdb.js
+│   │   │   ├── streaming.js
+│   │   │   └── recommendation.js
+│   │   └── db/
+│   │       └── migrate.js
+│   └── .env
+├── frontend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── index.html
+│   ├── public/
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── index.css
+│       ├── store/
+│       │   ├── quizStore.js
+│       │   ├── movieStore.js
+│       │   ├── authStore.js
+│       │   └── achievementStore.js
+│       ├── hooks/
+│       │   ├── usePosterCarousel.js
+│       │   └── useSwipe.js
+│       ├── components/
+│       │   ├── layout/
+│       │   │   ├── AnimatedBackground.jsx
+│       │   │   ├── PosterCarousel.jsx
+│       │   │   ├── GlassCard.jsx
+│       │   │   └── ProgressBar.jsx
+│       │   ├── quiz/
+│       │   │   ├── QuizPage.jsx
+│       │   │   ├── QuizOption.jsx
+│       │   │   └── CustomInput.jsx
+│       │   ├── results/
+│       │   │   ├── ResultsPage.jsx
+│       │   │   └── MovieCard.jsx
+│       │   ├── discover/
+│       │   │   ├── SwipeDiscovery.jsx
+│       │   │   ├── SwipeCard.jsx
+│       │   │   └── PreviewPopup.jsx
+│       │   ├── search/
+│       │   │   ├── SearchPage.jsx
+│       │   │   └── FilterPanel.jsx
+│       │   ├── streaming/
+│       │   │   ├── ProviderBadge.jsx
+│       │   │   └── StreamingInfo.jsx
+│       │   ├── gamification/
+│       │   │   └── AchievementPopup.jsx
+│       │   └── auth/
+│       │       └── LoginPage.jsx
+│       ├── pages/
+│       │   ├── Home.jsx
+│       │   ├── Quiz.jsx
+│       │   ├── Loading.jsx
+│       │   ├── Results.jsx
+│       │   ├── Discover.jsx
+│       │   ├── MovieDetail.jsx
+│       │   ├── Watchlist.jsx
+│       │   ├── Search.jsx
+│       │   └── Login.jsx
+│       ├── services/
+│       │   └── api.js
+│       └── utils/
+│           ├── similarity.js
+│           └── defaults.js

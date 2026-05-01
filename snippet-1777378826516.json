@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "frontend": "cd velora-frontend && npm run dev",
+    "backend": "cd velora-backend && node server.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  }
+}
